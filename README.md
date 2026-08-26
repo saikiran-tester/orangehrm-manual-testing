@@ -1,6 +1,6 @@
 # OrangeHRM Manual Testing Project
 
-A structured manual testing project performed on the OrangeHRM web application to validate key user workflows, functional behavior, input validation, boundary conditions, and access control within the defined testing scope.
+A structured manual testing project performed on the OrangeHRM web application to validate key user workflows, functional behavior, input validation, boundary conditions, role-based access control, and basic security-oriented checks within the defined testing scope.
 
 The project follows a practical QA workflow:
 
@@ -29,7 +29,7 @@ Testing focused on:
 ## 🧪 Application Under Test
 
 | Item | Details |
-|---|---|
+|------|---------|
 | Application | OrangeHRM |
 | Application Type | Web Application |
 | Testing Type | Manual Testing |
@@ -42,8 +42,6 @@ Testing focused on:
 
 ## 🎯 Testing Scope
 
-The following modules and functionalities were covered:
-
 ### 🔐 Login & Logout
 
 - Login with valid credentials
@@ -55,7 +53,7 @@ The following modules and functionalities were covered:
 
 - User management functionality
 - User creation and validation
-- User search/filter functionality
+- User search and filter functionality
 - User status and role-related checks
 
 ### 👨‍💼 PIM – Employee Management
@@ -63,7 +61,7 @@ The following modules and functionalities were covered:
 - Employee management functionality
 - Employee creation
 - Employee information validation
-- Employee search/filter functionality
+- Employee search and filter functionality
 
 ### 🏖️ Leave Management
 
@@ -73,7 +71,7 @@ The following modules and functionalities were covered:
 - Leave-related validations
 - Required field validation
 
-### 🔍 Validation & Boundary Testing
+### 🔍 Input Validation & Boundary Testing
 
 - Required field validation
 - Invalid input validation
@@ -81,18 +79,19 @@ The following modules and functionalities were covered:
 - Input length validation
 - Field-level validation behavior
 
-### 🔐 Access Control
+### 🔐 Role-Based Access Control
 
 - Role-based access checks
 - Admin and ESS user access validation
-- Verification of access to authorized functionality
+- Verification of authorized functionality
 - Verification of restricted functionality
 
 ### 🛡️ Basic Security-Oriented Checks
 
-- Basic input validation checks
-- Access control checks
 - Authentication-related validation
+- Access control checks
+- Basic input validation checks
+- Verification of restricted functionality based on user role
 
 > Full security penetration testing was not performed as part of this project.
 
@@ -100,13 +99,13 @@ The following modules and functionalities were covered:
 
 ## 🧭 Test Approach
 
-Testing was performed using a requirement-driven approach within the available public demo environment.
+Testing was performed using a requirement-driven approach within the available public OrangeHRM demo environment.
 
 The test design included:
 
+- Functional Testing
 - Positive Testing
 - Negative Testing
-- Functional Testing
 - Input Validation
 - Boundary Value Analysis
 - Role-Based Access Control Testing
@@ -138,7 +137,7 @@ The following testing activities were performed:
 ## 📊 Test Execution Summary
 
 | Metric | Result |
-|---|---:|
+|--------|--------|
 | Total Test Cases | 28 |
 | Passed | 28 |
 | Failed | 0 |
@@ -161,7 +160,7 @@ Test cases were executed against the OrangeHRM application by following the docu
 
 The execution results were recorded in the test execution summary.
 
-Supporting screenshots were captured for selected test cases and stored in the `Test_Evidence` folder.
+Supporting screenshots were captured for selected test cases and stored in the `Test_Evidence/` folder.
 
 ---
 
@@ -178,7 +177,7 @@ The screenshots provide supporting evidence for selected test cases and demonstr
 ## 📁 Project Artifacts
 
 | File / Folder | Description |
-|---|---|
+|---------------|-------------|
 | `01.OrangeHRM__Requirements.xlsx` | Documented requirements and requirement analysis |
 | `02.OrangeHRM__Test_Scenarios.xlsx` | Test scenarios derived from the requirements |
 | `03.OrangeHRM_Test_Case.xlsx` | Detailed manual test cases with steps and expected results |
@@ -229,8 +228,7 @@ No confirmed defects were identified within the defined testing scope.
 - Requirement Analysis
 - Test Scenario Design
 - Test Case Design
-- Positive Testing
-- Negative Testing
+- Positive & Negative Testing
 - Input Validation
 - Boundary Value Analysis
 - Role-Based Access Control Testing
