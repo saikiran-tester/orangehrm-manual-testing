@@ -235,7 +235,7 @@ No confirmed defects were identified within the defined testing scope.
 - Basic Security-Oriented Checks
 - Test Execution
 - Test Evidence Documentation
-- Defect Analysis
+- Defect Identification & Analysis
 - Test Documentation
 - Microsoft Excel
 - GitHub
